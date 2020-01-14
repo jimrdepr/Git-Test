@@ -11,17 +11,17 @@ namespace ConsoleApp2
         static void Main(string[] args)
         {
             int tries = 1;
-            Console.WriteLine("Enter a starting number :");
+            Console.WriteLine("Enter a starting number:");
             int min = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Enter a starting number :");
+            Console.WriteLine("Enter a starting number:");
             int max = Convert.ToInt32(Console.ReadLine());
 
             Random r = new Random();
             int num = r.Next(min, max);
 
             Console.WriteLine("Hello World!");
-            Console.WriteLine("I am thinking of a number between " + " and " + max);
+            Console.WriteLine("I am thinking of a number between " + min + " and " + max);
             Console.WriteLine("Enter Guess: ");
             int guess = Convert.ToInt32(Console.ReadLine());
 
