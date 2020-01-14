@@ -21,18 +21,19 @@ namespace ConsoleApp2
 
             while (guess != num)
             {
+                tries++;
+
                 if (guess > num)
                     Console.WriteLine("Too High");
                 else
                     Console.WriteLine("Too Low");
 
-                tries++;
-
                 Console.WriteLine("Enter Guess: ");
                 guess = Convert.ToInt32(Console.ReadLine());
             }
+
             Console.WriteLine("Correct");
-            Console.WriteLine("Guesses Made: ", tries);
+            Console.WriteLine("Guesses Made: " + tries);
         }
     }
 }
